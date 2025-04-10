@@ -16,7 +16,7 @@ from selector import router
 bot = Bot(token='7120184870:AAGj4MJH3Agf16KXvQvUoFG4JWcwNnfiOtE')  # Ініціалізуємо об'єкт бота з токеном
 dp = Dispatcher()  # Ініціалізуємо диспетчер для обробки подій (команд, повідомлень тощо)
 
-#ADMIN_CHAT_ID = 6155988964
+ADMIN_CHAT_ID = 6155988964
 
 
 @dp.message(CommandStart())
