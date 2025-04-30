@@ -4,7 +4,7 @@ main = ReplyKeyboardMarkup(
     keyboard=[
         [KeyboardButton(text='Позивачам'), KeyboardButton(text='Інвесторам')],
         [KeyboardButton(text='Адвокатам'), KeyboardButton(text='Наша команда')],
-        [KeyboardButton(text='Бажаєте стати нашим представником?'), KeyboardButton(text='Про нас')],
+        [KeyboardButton(text='Бажаєте стати нашим представником?')],
         [KeyboardButton(text='Відправити запит')],
         [KeyboardButton(text='Контакти')]
     ]
