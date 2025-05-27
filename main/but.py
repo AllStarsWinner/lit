@@ -7,6 +7,7 @@ main_inline = InlineKeyboardMarkup(inline_keyboard=[
     [InlineKeyboardButton(text='Адвокатам', callback_data='advokatam')],
     [InlineKeyboardButton(text='Наша команда', callback_data='nasha_komanda')],
     [InlineKeyboardButton(text='Бажаєте стати нашим представником?', callback_data='predstavnyk')],
+    [InlineKeyboardButton(text='Наші спеціалізації', callback_data='spez')],
     [InlineKeyboardButton(text='Відправити запит', callback_data='zapyt')],
     [InlineKeyboardButton(text='Контакти', callback_data='kontakty')]
 ])
@@ -19,10 +20,19 @@ pozer_inline = InlineKeyboardMarkup(inline_keyboard=[
 
 # === Кнопки для money ===
 money_inline = InlineKeyboardMarkup(inline_keyboard=[
+    [InlineKeyboardButton(text='Наші спеціалізації')],
     [InlineKeyboardButton(text='Позивачам/Відповідачам', callback_data='poz_money')],
     [InlineKeyboardButton(text='Позови, що фінансуються', callback_data='finans_money')],
     [InlineKeyboardButton(text='Міжнародний досвід інвестицій в літігацію', callback_data='dosvid_money')],
     [InlineKeyboardButton(text='Принципи інвестицій в позови', callback_data='principy_money')],
+    [InlineKeyboardButton(text='Назад', callback_data='back')],
+])
+
+
+spez = InlineKeyboardMarkup(inline_keyboard=[
+    [InlineKeyboardButton(text='Позови проти банків', callback_data='bank')],
+    [InlineKeyboardButton(text='Захист інтеліктуальної власності', callback_data='patent')],
+    [InlineKeyboardButton(text='Репарації від рф', callback_data='moskal')],
     [InlineKeyboardButton(text='Назад', callback_data='back')],
 ])
 

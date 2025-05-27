@@ -4,6 +4,7 @@ from aiogram.filters import CommandStart
 from aiogram.enums import ParseMode
 import but
 import os
+
 from main import info
 from aiogram import F, Bot
 from aiogram.types import CallbackQuery, Message
@@ -60,6 +61,26 @@ async def callback(callback: CallbackQuery):
     await callback.message.edit_text(info.site,reply_markup=but.back)
 
 
+
+@dp.callback_query(F.data == 'spez')
+async def asd(callback: CallbackQuery):
+    await callback.message.edit_text("Будь ласка, виберіть опцію яка Вас цікавить", reply_markup=but.spez)
+
+
+@dp.callback_query(F.data == 'bank')
+async def call(callback: CallbackQuery):
+    await callback.message.edit_text(info.bank, reply_markup=but.back)
+
+
+@dp.callback_query(F.data == 'patent')
+async def ytsd(callback: CallbackQuery):
+    await callback.message.edit_text(info.patent, reply_markup=but.back)
+
+
+
+@dp.callback_query(F.data == 'moskal')
+async def asddasdl(callback: CallbackQuery):
+    await callback.message.edit_text(info.moskal, reply_markup=but.back)
 
 @dp.callback_query(F.data == 'zapyt')
 async def cmd_anketa(callback: CallbackQuery, state: FSMContext):
